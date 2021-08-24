@@ -9,6 +9,15 @@ import os
 import time
 import random
 
+"""
+Examples of how to utilize the following:
+
+* Threading
+* Logging
+* Decorators
+
+"""
+
 class style():
     BLACK = '\033[30m'
     RED = '\033[31m'
@@ -23,7 +32,6 @@ class style():
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
-
 class MyThread(threading.Thread):
     def __init__(self, threadID=None,name=None, counter=None):
         threading.Thread.__init__(self)
